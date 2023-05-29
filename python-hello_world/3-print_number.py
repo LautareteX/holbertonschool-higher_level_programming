@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 number = 98
-"%s Battery street" % (number)
+string = f'{number} Battery street'
+print(string)
