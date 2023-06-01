@@ -5,4 +5,5 @@ def islower(c):
     elif ord(c) in range(64, 91):
         return False
     else:
-        False
+        return False
+    
