@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
     j = None
+    ts = ()
 
     for i in range(len(sentence)):
         j = i
@@ -8,4 +9,5 @@ def multiple_returns(sentence):
     if j is None:
         return (0, None)
 
-    return (j, sentence[0])
+    ts = (j, sentence[0])
+    return ts
