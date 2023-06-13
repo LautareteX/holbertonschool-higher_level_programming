@@ -2,6 +2,6 @@
 """Create class square"""
 
 
-class square:
+class Square:
     """Continue without code"""
     pass
