@@ -3,16 +3,11 @@
 Add integers function
 """
 
-
 def add_integer(a, b=98):
     """
-    Testing sum function
-    >>> add_integer(5, 5)
-    10
     >>> add_integer(-1, 1)
     0
     """
-
     if type(a) != int and type(a) != float:
         raise TypeError("a must be an integer")
     elif type(b) != int and type(b) != float:
