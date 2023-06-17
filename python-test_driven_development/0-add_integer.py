@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+Add integers function
+"""
+
+
 def add_integer(a, b=98):
     """
     Testing sum function
