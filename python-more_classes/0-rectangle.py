@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Create class square"""
+"""Create class rectangle"""
 
 
-class Square:
+class Rectangle:
     """Continue without code"""
     pass
