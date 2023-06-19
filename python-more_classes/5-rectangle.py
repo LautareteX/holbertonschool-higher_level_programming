@@ -4,9 +4,6 @@ Create class rectangle
 """
 
 
-from typing import Any
-
-
 class Rectangle:
     """
     Create class rectangle
