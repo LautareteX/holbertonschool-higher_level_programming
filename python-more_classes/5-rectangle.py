@@ -4,6 +4,9 @@ Create class rectangle
 """
 
 
+from typing import Any
+
+
 class Rectangle:
     """
     Create class rectangle
@@ -60,3 +63,6 @@ class Rectangle:
 
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
+
+    def __del__(self):
+        print("Bye rectangle...")
