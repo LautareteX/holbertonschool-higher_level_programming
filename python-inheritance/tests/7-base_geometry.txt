@@ -5,14 +5,14 @@ Using ``integer_validator``
 -------------------
 
 
-    >>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-    >>> integer_validator("Hi Python", 5)
+    >>> BaseGeometry.integer_validator("Hi Python", 5)
     Traceback (most recent call last):
     ...
     TypeError: integer_validator() missing 1 required positional argument: 'value'
 
-    >>> integer_validator()
+    >>> BaseGeometry.integer_validator()
     Traceback (most recent call last):
     ...
     TypeError: integer_validator() missing 3 required positional arguments: 'self', 'name', and 'value'
