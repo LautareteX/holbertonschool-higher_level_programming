@@ -5,4 +5,7 @@ Empty class
 
 
 class BaseGeometry:
+    """
+    My Geometry :)
+    """
     pass
