@@ -5,6 +5,9 @@ Pascal triangle without fibonacci
 
 
 def pascal_triangle(n):
+    """
+    pascal triangle func
+    """
     my_list = []
 
     if n <= 0:
