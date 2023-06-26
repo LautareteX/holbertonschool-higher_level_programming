@@ -67,3 +67,4 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         else:
             self.__x = value
+
