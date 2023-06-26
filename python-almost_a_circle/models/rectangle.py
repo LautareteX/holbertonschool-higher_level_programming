@@ -19,19 +19,19 @@ class Rectangle(Base):
     @property
     def width(self):
         return self.__width
-    
+
     @property
     def height(self):
         return self.__height
-    
+
     @property
     def x(self):
         return self.__x
-    
+
     @property
     def y(self):
         return self.__y
-    
+
     @width.setter
     def width(self, value):
         if value <= 0:
@@ -67,4 +67,3 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         else:
             self.__x = value
-        
