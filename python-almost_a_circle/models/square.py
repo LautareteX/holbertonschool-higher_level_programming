@@ -52,3 +52,26 @@ class Square(Rectangle):
         elif value < 0:
             raise ValueError("x must be >= 0")
         self._Rectangle__x = value
+
+    def update(self, *args, **kwargs):
+        """allocation of values in order or by dictionary"""
+        if args:
+            for iterator, count in enumerate(args, start=1):
+                if iterator == 1:
+                    self.id = count
+                if iterator == 2:
+                    self.size = count
+                if iterator == 3:
+                    self.x = count
+                if iterator == 4:
+                    self.y = count
+        else:
+            for iterator, count in kwargs.items():
+                if iterator == "id":
+                    self.id = count
+                if iterator == "size":
+                    self.size = count
+                if iterator == "x":
+                    self.x = count
+                if iterator == "y":
+                    self.y = count
