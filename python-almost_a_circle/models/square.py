@@ -75,3 +75,12 @@ class Square(Rectangle):
                     self.x = count
                 if iterator == "y":
                     self.y = count
+
+    def to_dictionary(self):
+        """ Rectange dictionary representation """
+        return {
+            'id': self.id,
+            'size': self.size,
+            'x': self.x,
+            'y': self.y
+        }
