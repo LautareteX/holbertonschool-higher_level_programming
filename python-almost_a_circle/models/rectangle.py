@@ -81,6 +81,7 @@ class Rectangle(Base):
             f"{self.width}/{self.height}"
 
     def update(self, *args):
+        """allocation of values in order"""
         if args:
             for iterator, count in enumerate(args, start=1):
                 if iterator == 1:
