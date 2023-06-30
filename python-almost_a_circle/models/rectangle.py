@@ -80,8 +80,8 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - " \
             f"{self.width}/{self.height}"
 
-    def update(self, *args):
-        """allocation of values in order"""
+    def update(self, *args, **kwargs):
+        """allocation of values in order or by dictionary"""
         if args:
             for iterator, count in enumerate(args, start=1):
                 if iterator == 1:
@@ -95,4 +95,14 @@ class Rectangle(Base):
                 if iterator == 5:
                     self.y = count
         else:
-            return None
+            for iterator, count in kwargs.items():
+                if iterator == "id":
+                    self.id = count
+                if iterator == "width":
+                    self.width = count
+                if iterator == "height":
+                    self.height = count
+                if iterator == "x":
+                    self.x = count
+                if iterator == "y":
+                    self.y = count
