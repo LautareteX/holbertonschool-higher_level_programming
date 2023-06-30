@@ -106,3 +106,13 @@ class Rectangle(Base):
                     self.x = count
                 if iterator == "y":
                     self.y = count
+
+    def to_dictionary(self):
+        """ Rectange dictionary representation """
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
