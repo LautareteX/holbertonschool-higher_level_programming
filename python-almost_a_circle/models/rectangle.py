@@ -79,3 +79,19 @@ class Rectangle(Base):
         """Return the string representation of the object"""
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - " \
             f"{self.width}/{self.height}"
+
+    def update(self, *args):
+        if args:
+            for iterator, count in enumerate(args, start=1):
+                if iterator == 1:
+                    self.id = count
+                if iterator == 2:
+                    self.width = count
+                if iterator == 3:
+                    self.height = count
+                if iterator == 4:
+                    self.x = count
+                if iterator == 5:
+                    self.y = count
+        else:
+            return None
