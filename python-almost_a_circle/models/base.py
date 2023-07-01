@@ -46,4 +46,7 @@ class Base(object):
     @staticmethod
     def from_json_string(json_string):
         """Return list of JSON string rep"""
+        new_list = []
+        if json_string is None or json_string == []:
+            return new_list
         return json.loads(json_string)
