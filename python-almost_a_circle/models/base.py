@@ -50,3 +50,13 @@ class Base(object):
         if json_string is None or json_string == []:
             return new_list
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """returns a list of instances"""
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        else:
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
