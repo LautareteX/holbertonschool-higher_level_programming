@@ -34,8 +34,6 @@ class Base(object):
         """Saving JSON file"""
         if list_objs is None:
             list_objs = []
-            with open(filename, 'w') as file:
-                file.write(list_objs)
         filename = cls.__name__ + ".json"
         json_data = []
         for obj in list_objs:
