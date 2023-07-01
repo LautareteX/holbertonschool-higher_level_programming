@@ -42,3 +42,8 @@ class Base(object):
 
         with open(filename, 'w') as file:
             file.write(json_data)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Return list of JSON string rep"""
+        return json.loads(json_string)
