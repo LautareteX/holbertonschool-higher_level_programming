@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""I forgot to comment the code so I added this line """
 
 
 class Rectangle:
@@ -9,10 +10,12 @@ class Rectangle:
 
     @property
     def width(self):
+        """I forgot to comment the code so I added this line """
         return self.__width
 
     @width.setter
     def width(self, value):
+        """I forgot to comment the code so I added this line """
         if type(value) != int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -22,10 +25,12 @@ class Rectangle:
 
     @property
     def height(self):
+        """I forgot to comment the code so I added this line """
         return self.__height
 
     @height.setter
     def height(self, value):
+        """I forgot to comment the code so I added this line """
         if type(value) != int:
             raise TypeError("height must be an integer")
         elif value < 0:
@@ -34,9 +39,11 @@ class Rectangle:
             self.__height = value
 
     def area(self):
+        """I forgot to comment the code so I added this line """
         return self.__width * self.__height
 
     def perimeter(self):
+        """I forgot to comment the code so I added this line """
         if self.__height == 0 or self.__width == 0:
             perimetro = 0
         else:
