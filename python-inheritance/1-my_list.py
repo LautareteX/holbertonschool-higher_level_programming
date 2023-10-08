@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""i hate the comments here"""
+
+
 class MyList(list):
-    
+
     def __init__(self):
         pass
 
