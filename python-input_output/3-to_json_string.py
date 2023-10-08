@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """no more jokes for today"""
+import json
 
 
 def to_json_string(my_obj):
