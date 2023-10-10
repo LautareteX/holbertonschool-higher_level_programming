@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Here we are again"""
 from base import Base
+"""Here we are again"""
 
 
 class Rectangle(Base):
