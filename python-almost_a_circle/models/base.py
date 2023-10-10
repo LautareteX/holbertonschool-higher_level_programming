@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""Here we are"""
+"""I forgot to comment the code so I added this line """
 
 
 class Base():
+    """Here we are again es es"""
     __nb_objects = 0
     def __init__(self, id=None):
+        """Here we are again os os"""
         if id is not None:
             self.id = id
         else:
