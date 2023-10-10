@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Here we are again"""
-Base = __import__('base').Base
+from base import Base
 
 
 class Rectangle(Base):
