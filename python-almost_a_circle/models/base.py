@@ -4,7 +4,9 @@
 
 class Base():
     """Here we are again es es"""
+
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Here we are again os os"""
         if id is not None:
