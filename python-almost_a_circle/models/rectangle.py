@@ -6,6 +6,7 @@ from base import Base
 class Rectangle(Base):
     """Here we are again"""
     def __init__(self, width=0, height=0, x=0, y=0, id=None):
+        """ Facu help me with this comment """
         super().__init__(id)
         self.width = width
         self.height = height
@@ -71,5 +72,10 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
+        """Here we are again"""
         for _ in range(self.height):
             print('#' * self.width)
+
+    def __str__(self):
+        """Here we are again"""
+        pass
