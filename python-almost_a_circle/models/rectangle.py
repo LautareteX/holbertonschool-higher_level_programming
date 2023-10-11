@@ -4,7 +4,7 @@ from base import Base
 
 
 class Rectangle(Base):
-    """Here we are again"""
+    """My Simple Rectangle Class"""
     def __init__(self, width=0, height=0, x=0, y=0, id=None):
         """ Facu help me with this comment """
         super().__init__(id)
@@ -78,4 +78,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """Here we are again"""
-        pass
+        return (f'[Rectangle] ({id(self)}) {self.x}/{self.y} - '
+                f'{self.width}/{self.height}')
