@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """I forgot to comment the code so I added this line """
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -21,9 +21,9 @@ class Rectangle(Base):
     def width(self, value):
         """Here we are again"""
         if type(value) is not int:
-            raise TypeError("width must be an integer")
+            raise TypeError(f"width  must be an integer")
         if value < 0:
-            raise ValueError("width must be > 0")
+            raise ValueError(f"width must be > 0")
         self.__width = value
 
     @property
@@ -65,3 +65,8 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """Here we are again"""
+        return self.width * self.height
+
