@@ -99,11 +99,14 @@ class Rectangle(Base):
             setattr(self, i, j)
 
     def to_dictionary(self):
-        """ Return a dictionario representation of Square jstring """
-        square_dict = {
-            'id': self.id,
-            'size': self.size,
+        """
+            Return a represent of dictionario of Rectangle
+        """
+        rectangle_dict = {
+            'y': self.y,
             'x': self.x,
-            'y': self.y
+            'id': self.id,
+            'width': self.width,
+            'height': self.height
         }
-        return square_dict
+        return rectangle_dict
