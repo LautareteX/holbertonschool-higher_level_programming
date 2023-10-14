@@ -19,4 +19,5 @@ class Square(Rectangle):
 
     @size.setter
     def size():
+        """Get the size of the square"""
         pass
