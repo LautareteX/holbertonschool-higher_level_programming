@@ -97,3 +97,13 @@ class Rectangle(Base):
             self.y = args[4]
         for i, j in kwargs.items():
             setattr(self, i, j)
+
+    def to_dictionary(self):
+        """ Return a dictionario representation of Square jstring """
+        square_dict = {
+            'id': self.id,
+            'size': self.size,
+            'x': self.x,
+            'y': self.y
+        }
+        return square_dict
