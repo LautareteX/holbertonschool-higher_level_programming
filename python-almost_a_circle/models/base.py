@@ -51,4 +51,3 @@ class Base():
             ir = cls(1)
         ir.update(**dictionary)
         return ir
-
