@@ -1,2 +1,2 @@
--- Script that creates a sql database
-CREATE DATABASE hbtn_0c_0;
+-- Script that creates a sql database in a MySQL server
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
