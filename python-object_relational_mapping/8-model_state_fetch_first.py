@@ -19,7 +19,9 @@ if __name__ == "__main__":
 
     first_st = orm_session.query(State).order_by(State.id).all()
 
-    for state in first_st:
-        print("{}: {}".format(state.id, state.name))
+    if first_st:
+        print("{}: {}".format(first_st.id, first_st.name))
+    else:
+        print("Nothing")
 
     orm_session.close()
