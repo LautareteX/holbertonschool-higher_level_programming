@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Task7 - lists all State objects from the database hbtn_0e_6_usa
+""" No more beauty comments. I am very stressed
 """
 from sys import argv
 from model_state import Base, State
@@ -17,7 +16,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     orm_session = Session()
 
-    first_st = orm_session.query(State).order_by(State.id).all()
+    first_st = orm_session.query(State).fisrt()
 
     if first_st:
         print("{}: {}".format(first_st.id, first_st.name))
