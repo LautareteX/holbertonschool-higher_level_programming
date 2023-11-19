@@ -7,10 +7,12 @@ import sys
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", user=sys.argv[1],
                          passwd=sys.argv[2], db=sys.argv[3],
-                         port=3306)
+                         port=3306, charset="utf8")
 
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT cities.name FROM cities INNER JOIN states ON cities.state_id = states.id WHERE states.name LIKE %s ORDER BY cities.id ASC")
+    
+    sql_query = """SELECT cities.name FROM cities INNER JOIN states ON cities.state_id = states.id WHERE states.name LIKE %s ORDER BY cities.id ASC"""
+    db_cursor.execute(sql_query, (sys.argv[4],))
 
     q_rows = db_cursor.fetchall()
     if q_rows is not None:
