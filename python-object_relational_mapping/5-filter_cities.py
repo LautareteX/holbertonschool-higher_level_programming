@@ -10,7 +10,7 @@ if __name__ == "__main__":
                          port=3306)
 
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT cities.name FROM cities JOIN states ON cities.state_id = states.id WHERE states.name = '{}' RDER BY cities.id".format(sys.argv[4]))
+    db_cursor.execute("SELECT cities.name FROM cities INNER JOIN states ON cities.state_id = states.id WHERE states.name LIKE %s ORDER BY cities.id ASC")
 
     q_rows = db_cursor.fetchall()
     if q_rows is not None:
