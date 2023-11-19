@@ -8,8 +8,7 @@ if __name__ == "__main__":
                          port=3306)
 
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT id, cities.name, states.name FROM cities "
-                        + "INNER JOIN states ON states.id = cities.state_id")
+    db_cursor.execute("SELECT cities.id, cities.name, states.name FROM cities JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC")
 
     q_rows = db_cursor.fetchall()
     for i in q_rows:
