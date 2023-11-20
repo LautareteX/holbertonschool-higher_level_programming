@@ -1,19 +1,15 @@
 #!/usr/bin/python3
-"""idk i need to comment here"""
+"""i hate the comments here"""
 
 
 class BaseGeometry:
-    """BaseGeometry? That is School Geometry"""
-    def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
-
+    """for some reason isnt commented"""
     def area(self):
-        """area looks good"""
-        return self.__width * self.__height
+        """Return an EPIC Exception"""
+        raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
