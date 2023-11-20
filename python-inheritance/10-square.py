@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-"""i forgot to comment here aaa"""
+"""i hate the comments here"""
+BaseGeometry = __import__("7-base_geometry").BaseGeometry
 Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square():
-    """i dont like to comment help me"""
+class Square(Rectangle):
+    """for some reason isnt commented"""
     def __init__(self, size):
+        """Intialize a god rectangule"""
+        self.integer_validator("size", size)
         self.__size = size
 
     def area(self):
-        """area looks good"""
-        return self._Square__width * self._Square__height
+        """return area yes"""
+        return self.__size ** 2
