@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 """i hate the comments here"""
 
-
 class MyList(list):
-
-    def __init__(self):
-        pass
+    """for some reason isnt commented"""
 
     def print_sorted(self):
-        s_list = sorted(self)
-        print(s_list)
+        if hasattr(self, '__str__'):
+            print(sorted(self))
+            return (sorted(self))

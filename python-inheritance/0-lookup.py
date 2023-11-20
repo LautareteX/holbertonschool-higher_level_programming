@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""i hate the comments here"""
+
+
 def lookup(obj):
     """for some reason isnt commented"""
-    return list(dir(obj))
+    propertys = dir(obj)
+    return propertys
