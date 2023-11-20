@@ -4,6 +4,8 @@
 
 def inherits_from(obj, a_class):
     """for some reason isnt commented"""
-    for cls in obj.__class__.__mro__:
-        if issubclass(cls, a_class):
-            return True
+    if type(obj) == a_class:
+        return False
+    if issubclass(type(obj), a_class):
+        return True
+    return False
